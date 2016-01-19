@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-ios-hidestatusbar"
+    version="1.0.0">
+
+    <name>cordova-plugin-ios-hidestatusbar</name>
+    <description>Sets status bar as hidden in ios cordova project.</description>
+    <author>Nicolas Leclerc</author>
+    <license>MIT</license>
+    <keywords>cordova,statusbar,ios</keywords>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <repo>https://github.com/happinov/cordova-plugin-ios-hidestatusbar.git</repo>
+    <issue>https://github.com/happinov/cordova-plugin-ios-hidestatusbar/issues</issue>
+
+    <!-- ios -->
+    <!-- Setting plist as defined in https://github.com/apache/cordova-plugin-statusbar#hiding-at-startup -->
+    <platform name="ios">
+        <config-file target="*-Info.plist" parent="UIStatusBarHidden">
+            <true/>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIViewControllerBasedStatusBarAppearance">
+            <false/>
+        </config-file>
+    </platform>
+</plugin>
