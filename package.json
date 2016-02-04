@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "name": "cordova-plugin-ios-hidestatusbar",
-    "cordova_name": "ordova-plugin-ios-hidestatusbar",
+    "cordova_name": "cordova-plugin-ios-hidestatusbar",
     "description": "Sets status bar as hidden in ios cordova project.",
     "author": "Nicolas Leclerc",
     "license": "MIT",
